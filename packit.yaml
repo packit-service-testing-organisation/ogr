@@ -1,0 +1,8 @@
+specfile_path: python-ogr.spec
+upstream_package_name: ogr
+downstream_package_name: python-ogr
+
+upstream_project_url: https://github.com/packit-service/ogr
+
+create_tarball_command: ["python3", "setup.py", "sdist", "--dist-dir", "."]
+current_version_command: ["python3", "setup.py", "--version"]

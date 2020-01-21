@@ -4,7 +4,7 @@
 %{?python_enable_dependency_generator}
 
 Name:           python-%{pypi_name}
-Version:        0.9.0
+Version:        0.9.1
 Release:        1%{?dist}
 Summary:        One API for multiple git forges
 
@@ -13,7 +13,7 @@ URL:            https://github.com/packit-service/ogr
 Source0:        https://files.pythonhosted.org/packages/source/o/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
 
-BuildRequires:  bad-change
+BuildRequires:  python3-devel
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(setuptools-scm)
 BuildRequires:  python3dist(setuptools-scm-git-archive)
@@ -51,6 +51,9 @@ rm -rf %{pypi_name}.egg-info
 
 
 %changelog
+* Wed Dec 04 2019 Frantisek Lachman <flachman@redhat.com> - 0.9.1-1
+- New upstream release 0.9.1
+
 * Wed Dec 04 2019 Frantisek Lachman <flachman@redhat.com> - 0.9.0-1
 - New upstream release 0.9.0
 
